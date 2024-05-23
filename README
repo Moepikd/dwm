@@ -50,4 +50,4 @@ and (re)compiling the source code.
 Dependencies
 ------------
 (on Arch, but you should be able to find the listed software on your package manager)
-kitty, ttf-font-awesome, xorg, libxinerama, ttf-jetbrains-mono, libxft.
+kitty, ttf-font-awesome, xorg-server, libxinerama, ttf-jetbrains-mono, libxft.
