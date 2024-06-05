@@ -8,11 +8,17 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ttf-jetbrains-mono:size=10" };
 static const char dmenufont[]       = "ttf-jetbrains-mono:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
+static const char col_gray1[]       = "#828d9e";
+static const char col_gray2[]       = "#828d9e";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#54607d";
+static const char col_cyan[]        = "#3b3b44";
+/* static const char col_gray1[]       = "#20202a";
+   static const char col_gray2[]       = "#20202a";
+   static const char col_gray3[]       = "#bbbbbb";
+   static const char col_gray4[]       = "#eeeeee";
+   static const char col_cyan[]        = "#c58294";
+*/
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -24,9 +30,9 @@ static const char *tags[] = { "", "", "", "", "", "", "", "
 
 static const Rule rules[] = {
 	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
-	 *	WM_NAME(STRING) = title
-	 */
+	*	WM_CLASS(STRING) = instance, class
+	*	WM_NAME(STRING) = title
+	*/
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Firefox",  NULL,       NULL,       0,             0,              -1 },
 };
@@ -117,4 +123,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
